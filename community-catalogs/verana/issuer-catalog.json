@@ -1,0 +1,175 @@
+{
+  "$schema": "https://fides.community/schemas/issuer-catalog/v1",
+  "orgId": "org:verana",
+  "issuers": [
+    {
+      "id": "issuer:verana:vesta-badge:test",
+      "environment": "test",
+      "issuanceProtocol": "oid4vci",
+      "oid4vciMetadataUrl": "https://vesta.playground.testnet.verana.network/oid4vci/demo-did/.well-known/openid-credential-issuer",
+      "displayName": "Vesta Appliances (demo)",
+      "description": "ECS Badge issuer of the Vesta appliance use case in the Verana Playground. A vs-agent (Verana's business wallet) issuing dc+sd-jwt badges over OpenID4VCI and AnonCreds badges over DIDComm, with issuance anchored on the Verana Verifiable Public Registry and trust resolvable via Proof-of-Trust.",
+      "issuerWebsiteUrl": "https://playground.testnet.verana.network/usecases/vesta",
+      "projectContext": "Verana Playground - Vesta use case",
+      "supportedWallets": [
+        {
+          "id": "hologram-messaging"
+        },
+        {
+          "id": "bc-wallet"
+        },
+        {
+          "id": "eudi-reference-personal-wallet"
+        },
+        {
+          "id": "inji-wallet"
+        },
+        {
+          "id": "paradym-wallet"
+        },
+        {
+          "id": "procivis-one-wallet"
+        },
+        {
+          "id": "sphereon-wallet"
+        },
+        {
+          "id": "swiyu-wallet"
+        },
+        {
+          "id": "talao-wallet"
+        },
+        {
+          "id": "wwwallet"
+        }
+      ],
+      "credentialRefs": [
+        {
+          "id": "cred:verana:ecs-badge:vcdm-2-0"
+        }
+      ]
+    },
+    {
+      "id": "issuer:verana:zenith-badge:test",
+      "environment": "test",
+      "issuanceProtocol": "oid4vci",
+      "oid4vciMetadataUrl": "https://zenith.playground.testnet.verana.network/oid4vci/demo-did/.well-known/openid-credential-issuer",
+      "displayName": "Zenith Repairs (demo)",
+      "description": "ECS Badge issuer of the Zenith Repairs demo organization (an accredited repairer in the Vesta use case). Runs vs-agent with dual-stack issuance: OpenID4VCI (dc+sd-jwt) and DIDComm (AnonCreds).",
+      "issuerWebsiteUrl": "https://playground.testnet.verana.network/usecases/vesta",
+      "projectContext": "Verana Playground - Vesta use case",
+      "supportedWallets": [
+        {
+          "id": "hologram-messaging"
+        },
+        {
+          "id": "bc-wallet"
+        },
+        {
+          "id": "eudi-reference-personal-wallet"
+        },
+        {
+          "id": "inji-wallet"
+        },
+        {
+          "id": "paradym-wallet"
+        },
+        {
+          "id": "procivis-one-wallet"
+        },
+        {
+          "id": "sphereon-wallet"
+        },
+        {
+          "id": "swiyu-wallet"
+        },
+        {
+          "id": "talao-wallet"
+        },
+        {
+          "id": "wwwallet"
+        }
+      ],
+      "credentialRefs": [
+        {
+          "id": "cred:verana:ecs-badge:vcdm-2-0"
+        }
+      ]
+    },
+    {
+      "id": "issuer:verana:demo-issuer:test",
+      "environment": "test",
+      "issuanceProtocol": "oid4vci",
+      "oid4vciMetadataUrl": "https://demo-issuer-accredited.playground.testnet.verana.network/oid4vci/demo-did/.well-known/openid-credential-issuer",
+      "displayName": "Accredited Issuer (demo)",
+      "description": "Accredited demo issuer of the Verana Playground's personal-wallet loop: issues the Demo Credential over OpenID4VCI (dc+sd-jwt) and DIDComm (AnonCreds) so any listed wallet can exercise a full Verana-verified issuance end to end.",
+      "issuerWebsiteUrl": "https://playground.testnet.verana.network/personal-wallets",
+      "projectContext": "Verana Playground - personal wallet demo loop",
+      "supportedWallets": [
+        {
+          "id": "hologram-messaging"
+        },
+        {
+          "id": "bc-wallet"
+        },
+        {
+          "id": "eudi-reference-personal-wallet"
+        },
+        {
+          "id": "inji-wallet"
+        },
+        {
+          "id": "paradym-wallet"
+        },
+        {
+          "id": "procivis-one-wallet"
+        },
+        {
+          "id": "sphereon-wallet"
+        },
+        {
+          "id": "swiyu-wallet"
+        },
+        {
+          "id": "talao-wallet"
+        },
+        {
+          "id": "wwwallet"
+        }
+      ],
+      "credentialRefs": [
+        {
+          "id": "cred:verana:demo-credential:sd-jwt-vc"
+        }
+      ]
+    },
+    {
+      "id": "issuer:verana:normacert:test",
+      "environment": "test",
+      "issuanceProtocol": "other",
+      "displayName": "NormaCert (demo)",
+      "description": "Demo certification body accredited in the ISO Certification demo ecosystem; issues ISO 9001 demo credentials to organizations over DIDComm (vt-flow), which present them as Linked Verifiable Presentations in their DID Documents.",
+      "issuerWebsiteUrl": "https://playground.testnet.verana.network/usecases/vesta",
+      "projectContext": "Verana Playground - Vesta use case",
+      "credentialRefs": [
+        {
+          "id": "cred:verana:iso9001-demo:vcdm-2-0"
+        }
+      ]
+    },
+    {
+      "id": "issuer:verana:repair-network:test",
+      "environment": "test",
+      "issuanceProtocol": "other",
+      "displayName": "Vesta Repair Network (demo)",
+      "description": "Ecosystem controller of the Vesta Repair Network; accredits repair organizations by issuing the Authorized Repairer credential over DIDComm (vt-flow), anchored on the Verana Verifiable Public Registry.",
+      "issuerWebsiteUrl": "https://playground.testnet.verana.network/usecases/vesta",
+      "projectContext": "Verana Playground - Vesta use case",
+      "credentialRefs": [
+        {
+          "id": "cred:verana:authorized-repairer:vcdm-2-0"
+        }
+      ]
+    }
+  ]
+}
